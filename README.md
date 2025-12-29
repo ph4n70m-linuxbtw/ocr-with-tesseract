@@ -31,3 +31,17 @@ This essentially makes the file executable so that it can easily be used by typi
 
 You can assign this command to a keyboard shortcut, which makes it very fast to copy large bits of text from your screen.
 (It is actually what I have done in the Keyboard program on Xubuntu which comes with XFCE)
+
+
+
+What this file is doing : 
+
+It runs the command 'flameshot gui -r | tesseract stdin stdout | xclip -selection clipboard'.
+
+'flameshot gui -r' takes a screenshot from which you can chose the area that you want to screen grab, 
+and it pipes the output (screenshot) to tesseract, which takes the screenshot and turns it into text, 
+and finally, pipes the text to xclip, which copies the text to your clipboard.
+
+I hope that this project will be useful to you.
+
+Please consider starring this project so that others will see it too.
